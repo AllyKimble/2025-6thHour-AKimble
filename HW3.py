@@ -13,32 +13,32 @@ print("Hello World!")
 
 #DO NOT CHANGE THE VALUE OF THE VARIABLE.
 
-Integer1 = 4
-String1 = "Box"
-Boolean1 = True
-String2 = "Nineteen"
-String3 = "Rope"
-Integer2 = 19
-String4 = "19"
-Integer3 = 2
-Boolean2 = True
-Boolean3 = False
-String5 = "True"
-String6 = "False"
-Integer4 = 5
-String7 = "The"
-String8 = "Game"
-Var16 = False
-Integer5 = 3
-Integer6 = 2
-Integer7 = 1
-Var20 = String5
-Var21 = String6
-Var22 = String2
-Var23 = String7
-Var24 = String8
-Integer8 = 6
+IntegerVar1 = 4
+StringVar2 = "Box"
+BooleanVar3 = True
+StringVar4 = "Nineteen"
+StringVar5 = "Rope"
+IntegerVar6 = 19
+StringVar7 = "19"
+IntegerVar8 = 2
+BooleanVar9 = True
+BooleanVar10 = False
+StringVar11 = "True"
+StringVar12 = "False"
+IntegerVar13 = 5
+StringVar14 = "The"
+StringVar15 = "Game"
+BooleanVar16 = False
+IntegerVar17 = 3
+IntegerVar18 = 2
+IntegerVar19 = 1
+Var20 = StringVar11
+Var21 = StringVar12
+Var22 = StringVar4
+Var23 = StringVar14
+Var24 = StringVar15
+IntegerVar25 = 6
 
 #3. Take all the variables you labeled as "integer", add them together, and print the result.
-Added = Integer1 + Integer2 + Integer3 + Integer4 + Integer5 + Integer6 + Integer7 + Integer8
+Added = IntegerVar1 + IntegerVar6 + IntegerVar8 + IntegerVar13 + IntegerVar17 + IntegerVar18 + IntegerVar19 + IntegerVar25
 print(Added)
