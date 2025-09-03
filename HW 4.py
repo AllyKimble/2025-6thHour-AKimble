@@ -46,4 +46,4 @@ print(hermit_list)
 
 #9. Create a print statement that asks the user to input their own index value for the list on #8.
 
-print(hermit_list[int(input())])
+print(hermit_list[int(input("Input here:"))])
