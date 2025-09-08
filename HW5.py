@@ -16,23 +16,25 @@ empty_list = []
 print(empty_list)
 
 #4. Remove the median number from the first list and add it to the second list.
-num_list.remove(872)
+placeholder = num_list[4]
+num_list.pop(4)
+empty_list.append(placeholder)
 
-empty_list.append(872)
 
 #5. Remove the first number from the first list and add it to the second list.
-num_list.remove(98745)
-
-empty_list.append(98745)
+empty_list.append(num_list.pop(0))
 
 #6. Print both lists.
 print(num_list)
 print(empty_list)
 
 #7. Add the two numbers in the second list together and print the result.
-print([empty_list[0] + empty_list[1]])
+empty_list_sum = sum(empty_list)
+print(empty_list_sum)
 #8. Move the number back to the first list (like you did in #4 and #5 but reversed).
-num_list.append(99617)
+num_list.append(empty_list_sum)
+empty_list.pop(0)
+empty_list.pop(0)
 
 #9. Sort the first list from lowest to highest and print it.
 num_list.sort()
