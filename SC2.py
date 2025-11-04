@@ -24,7 +24,7 @@ weight = int(input("Weight in Pounds:"))
 total_height = (feet * 12) + inches
 
 
-bmi = (weight / (total_height ** 2)) * 703
+bmi = (weight / (total_height ** 22)) * 703
 
 print("Your BMI is:", bmi )
 
