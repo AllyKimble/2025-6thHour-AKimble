@@ -143,6 +143,7 @@ while player["HP"] > 0 and enemy["HP"] > 0:
                 dmg = player["Damage"] * 2
                 enemy["HP"] -= dmg
                 print("Astarion deals" , dmg , "damage!")
+                attacker = enemy
             elif hit_value >= enemy["AC"]:
                 dmg = player["Damage"]
                 enemy["HP"] -= dmg
@@ -167,6 +168,7 @@ while player["HP"] > 0 and enemy["HP"] > 0:
                 dmg = enemy["Damage"] * 2
                 player["HP"] -= dmg
                 print("Mindflayer deals", dmg, "damage!")
+                attacker = player
             elif hit_value >= player["AC"]:
                 dmg = enemy["Damage"]
                 player["HP"] -= dmg
