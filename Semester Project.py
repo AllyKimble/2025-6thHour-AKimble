@@ -134,6 +134,7 @@ while player["HP"] > 0 and enemy["HP"] > 0:
 
         if roll == 1:
             print("Nat 1! Automatic Miss!")
+            attacker = enemy
         else:
             hit_value = roll + player["AtkMod"]
 
@@ -142,17 +143,14 @@ while player["HP"] > 0 and enemy["HP"] > 0:
                 dmg = player["Damage"] * 2
                 enemy["HP"] -= dmg
                 print("Astarion deals" , dmg , "damage!")
-            else:
-                hit_value = roll + player["AtkMod"]
-
-            if hit_value >= enemy["AC"]:
+            elif hit_value >= enemy["AC"]:
                 dmg = player["Damage"]
                 enemy["HP"] -= dmg
                 print("Astarion hits! They deal" , dmg , "damage!")
+                attacker = enemy
             else:
                 print("Astarion misses!")
-
-                attacker=enemy
+                attacker = enemy
 
     if attacker == enemy:
         roll = random.randint(1, 20)
@@ -160,6 +158,7 @@ while player["HP"] > 0 and enemy["HP"] > 0:
 
         if roll == 1:
             print("Nat 1! Automatic Miss!")
+            attacker = player
         else:
             hit_value = roll + enemy["AtkMod"]
 
@@ -168,23 +167,17 @@ while player["HP"] > 0 and enemy["HP"] > 0:
                 dmg = enemy["Damage"] * 2
                 player["HP"] -= dmg
                 print("Mindflayer deals", dmg, "damage!")
-            else:
-                hit_value = roll + enemy["AtkMod"]
-
-            if hit_value >= player["AC"]:
+            elif hit_value >= player["AC"]:
                 dmg = enemy["Damage"]
                 player["HP"] -= dmg
                 print("Mindflayer hits! They deal", dmg, "damage!")
+                attacker = player
             else:
                 print("Mindflayer misses!")
-
                 attacker = player
 
 
 
-
-    if player["HP"] <= 0 or enemy["HP"] <= 0:
-        break
 
 
 
@@ -201,3 +194,4 @@ if player["HP"] < 0:
     print("Astarion has died. Mindflayer wins!")
 elif enemy["HP"] < 0:
     print("Mindfllayer has been defeated! Astarion wins!")
+
