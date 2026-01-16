@@ -178,15 +178,6 @@ while player["HP"] > 0 and enemy["HP"] > 0:
                 print("Mindflayer misses!")
                 attacker = player
 
-
-
-
-
-
-
-
-
-
 print("Astarion HP:" , player["HP"])
 print("Mindflayer HP:" , enemy["HP"])
 time.sleep(1)
@@ -196,4 +187,3 @@ if player["HP"] < 0:
     print("Astarion has died. Mindflayer wins!")
 elif enemy["HP"] < 0:
     print("Mindfllayer has been defeated! Astarion wins!")
-
