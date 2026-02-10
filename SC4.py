@@ -30,6 +30,3 @@ print(stats)
 
 #Once that is done, to ensure that the average of the statblock is fair (somewhere roughly between 12-13), he wants you
 #to plug it into a calculator (SC5) and print the average.
-
-average = sum(stats) / 6
-print("Average Stat:", average)
