@@ -31,10 +31,10 @@ def loop(number):
 
 #5. Call all of the functions created in 1 - 4 with relevant arguments.
 
-hello_world()
-calc(a = random.randint(1, 100), b = random.randint(1, 100), c = random.randint(1, 100))
-animal_list("Dog", "Turtle" , "Cat" , "Penguin" , "Panda" )
-loop(67)
+#hello_world()
+#calc(a = random.randint(1, 100), b = random.randint(1, 100), c = random.randint(1, 100))
+#animal_list("Dog", "Turtle" , "Cat" , "Penguin" , "Panda" )
+#loop(67)
 
 #6. Create a variable x that has the value of 2. Print x
 
