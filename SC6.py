@@ -55,9 +55,17 @@ class Character:
             print(self.name, "misses! :(")
 
 
-astarion = Character("Astarion", 40, 3, 14, 5, [8, 6, 4])
-mindflayer = Character("Mindflayer", 71, 1, 15, 7, [10, 10, 4])
+astarion = Character("Astarion", 40, 3, 14, 5, [random.randint(1,8) + random.randint(1,6) + 4])
+laezel = Character("LaeZel", 48, 1, 17, 6, [random.randint(1,6) + random.randint(1,6) + 3])
+shadowheart = Character("Shadowheart", 40, 1, 18, 4, [random.randint(1,6) + 3])
+gale = Character("Gale", 32, 1, 14, 6, [random.randint(1,10) + random.randint(1,10)])
 
+
+mindflayer = Character("Mindflayer", 71, 1, 15, 7, [random.randint(1,10) + random.randint(1,10) + 4])
+goblin = Character("Goblin", 7, 0, 12, 4, [random.randint(1,6) + 2])
+orc = Character("Orc", 15, 1, 13, 5, [random.randint(1,12) + 3])
+troll = Character("Troll", 84, 1, 15, 7, [random.randint(1,6) + random.randint(1,6) + 4])
+dragon = Character("Dragon", 127, 2, 18, 7, [random.randint(1,10) + random.randint(1,10) + random.randint(1,8) + 4])
 # Initiative
 player_init = astarion.roll_initiative()
 enemy_init = mindflayer.roll_initiative()
