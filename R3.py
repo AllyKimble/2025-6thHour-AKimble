@@ -27,11 +27,11 @@ print(random.choice(color_list))
 
 #5. Create an if statement that determines which of the three variables from #2 is the lowest.
 
-if a < b and c:
+if a <= b and a <= c:
     print(a, "is the smallest.")
-elif b < a and c:
+elif b <= a and b <= c:
     print(b, "is the smallest.")
-elif c < a and b:
+elif c <= a and c <= b:
     print(c, "is the smallest.")
 elif a == b == c:
     print("They are all the same number stupid :P")
