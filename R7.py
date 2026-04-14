@@ -22,5 +22,5 @@ class Student:
 
 #3. Make a def function within the class that offers the user to input/change their favorite color.
 
-    def color(self):
+    def colorchg(self):
         self.color = input("What is your favorite color?")
